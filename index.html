@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Devaldo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('emyu.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .sidebar {
+            width: 250px;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            height: 100vh;
+            position: fixed;
+            padding: 20px;
+        sidebar {
+            
+        }
+
+        }
+        .sidebar img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+        }
+        .sidebar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 50px;
+        }
+        .profile-card {
+            display: none;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .profile-card.active {
+            display: block;
+        }
+        .profile-card h2 {
+            color: #E74C3C;
+        }
+        .profile-card p {
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.profile-card');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="profile.jpg.jpg" alt="Foto Profil">
+        <h1>Devaldo Mouris Antaula</h1>
+        <p>Profesional | Pengoperasian mesin injection</p>
+        <nav>
+            <a onclick="showSection('profil')">Profil</a>
+            <a onclick="showSection('pengalaman')">Pengalaman</a>
+            <a onclick="showSection('pendidikan')">Pendidikan</a>
+            <a onclick="showSection('keahlian')">Keahlian</a>
+            <a onclick="showSection('kontak')">Kontak</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="profile-card active" id="profil">
+            <h2>PROFIL</h2>
+            <p>Nama Lengkap     : Devaldo Mouris Antaula</p>
+            <p>Tanggal Lahir    : Brebes, 28 Maret 1999</p>
+            <p>Profesi          : Operator Mesin Injection</p>
+            <p>Deskripsi        : Berpengalaman dalam mengoperasikan mesin injection untuk produksi massal. Memiliki pemahaman mendalam mengenai proses pencetakan plastik, pemeliharaan mesin, dan pengendalian kualitas hasil produksi.</p>
+            <p>Keahlian Khusus  : Pemrograman mesin injection, troubleshooting, dan pengecekan kualitas.</p>
+        </div>
+        <div class="profile-card" id="pengalaman">
+            <h2>PENGALAMAN</h2>
+            <p>- PRAMUNIAGA DI TOSERBA ZAM ZAM (2017-2019)</p>
+            <p>- MARKETING DI PT BIMA SAKTI (2019-2021)</p>
+            <P>- OPERATOR INJECTION DI PT CITRA PLASTIK MAKMUR (2021-2024)</P>
+        </div>
+        <div class="profile-card" id="pendidikan">
+            <h2>PENDIDIKAN</h2>
+            <p>- SD NEGERI JIPANG 02 (2016)</p>
+            <p>- SMPMUHAMMADIYAH BANTARKAWUNG</p>
+            <p>- SMK MUHAMMADIYAH BANTARKAWUNG</p>
+        </div>
+        <div class="profile-card" id="keahlian">
+            <h2>KEAHLIAN</h2>
+            <p>- Pengoperasian Mesin Injection</p>
+            <p>- Pengecatan Bodi Plastik</p>
+            <p>- Maintenance Mesin Produksi</p>
+        </div>
+        <div class="profile-card" id="kontak">
+            <h2>KONTAK</h2>
+            <p>EMAIL     : DEVALDOMOURISANTAULA0@GMAIL.COM</p>
+            <p>NO.TELPON : 085328817613</p>
+            <p>ALAMAT    : JL RAYA JIPANG BANTARKAWUNG BREBES</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
